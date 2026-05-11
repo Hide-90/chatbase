@@ -1,0 +1,63 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://chatbase.co/docs/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Activity
+
+> This section shows the chat logs of the conversations your users had with your AI agent and the Lead forms filled by your users.
+
+## Chat Logs
+
+The chat logs provides a detailed view of all user interactions with your AI agent. It allows you to review individual conversations and evaluate your agent's responses. Each log includes user messages, agent responses, and any triggered actions, helping you identify issues, optimize responses, and improve overall user experience.
+
+<Frame>
+  <img src="https://mintcdn.com/chatbase/fuaTVXjARv0sH-Me/user-guides/chatbot/images/activity/activity-1.png?fit=max&auto=format&n=fuaTVXjARv0sH-Me&q=85&s=de683a23eaa138815be3c2a3f836198c" alt="AI agent Activity Filters" width="3226" height="2184" data-path="user-guides/chatbot/images/activity/activity-1.png" />
+</Frame>
+
+The chat logs can be filtered by the following:
+
+* Date
+* Confidence Score
+* Source
+* Feedback
+* Sentiment
+* Topic
+
+  <Frame>
+    <img src="https://mintcdn.com/chatbase/fuaTVXjARv0sH-Me/user-guides/chatbot/images/activity/activity-2.gif?s=75660c16ad187568a8f07c9a1c643702" alt="AI agent Activity Filters" width="800" height="541" data-path="user-guides/chatbot/images/activity/activity-2.gif" />
+  </Frame>
+
+<br />
+
+**Improve Answer**
+
+This feature allows you adjust the AI Agent's response if it wasn't accurate or satisfactory.
+
+When you click the Improve Answer button, a form appears showing the user's original question, the AI Agent's response, and a field where you can enter the expected answer.
+Once the answer is updated, the question and answer are added automatically to the Q\&A section of your sources. 
+
+<Frame>
+  <img src="https://mintcdn.com/chatbase/fuaTVXjARv0sH-Me/user-guides/chatbot/images/activity/improve-answer-feature.gif?s=dcbcf758c69b9baac47954f86ceceb9f" alt="Improve Answer Feature" width="800" height="541" data-path="user-guides/chatbot/images/activity/improve-answer-feature.gif" />
+</Frame>
+
+### Confidence Score
+
+This indicates how confident the AI Agent is in its response based on the sources you've trained it on. You can review responses with low confidence scores and revise them to improve their accuracy.
+
+### Exporting Conversations
+
+You can export the conversations in the chats log directly from the dashboard using the Export button. The export can be downloaded as JSON, PDF, and CSV.
+
+<Frame>
+  <img src="https://mintcdn.com/chatbase/fuaTVXjARv0sH-Me/user-guides/chatbot/images/activity/exporting-conversations.png?fit=max&auto=format&n=fuaTVXjARv0sH-Me&q=85&s=4d3bbdcbd7c5450924097477257ff49b" alt="Exporting Conversations" width="1730" height="938" data-path="user-guides/chatbot/images/activity/exporting-conversations.png" />
+</Frame>
+
+## Leads
+
+This section shows the submissions of the Leads form along with their submission date. You can filter them by date and export them as CSV or PDF.
+
+<Frame>
+  <img src="https://mintcdn.com/chatbase/fuaTVXjARv0sH-Me/user-guides/chatbot/images/activity/leads-activity.png?fit=max&auto=format&n=fuaTVXjARv0sH-Me&q=85&s=5c3c7f88b0e9461ad55e9fcd5b4d146e" alt="Leads Activity" width="3234" height="940" data-path="user-guides/chatbot/images/activity/leads-activity.png" />
+</Frame>
+
+The leads form  can be configured through the settings page of the AI agent or through [the Collect Leads action](./actions/collect-leads)
