@@ -60,4 +60,4 @@ This section shows the submissions of the Leads form along with their submission
   <img src="https://mintcdn.com/chatbase/fuaTVXjARv0sH-Me/user-guides/chatbot/images/activity/leads-activity.png?fit=max&auto=format&n=fuaTVXjARv0sH-Me&q=85&s=5c3c7f88b0e9461ad55e9fcd5b4d146e" alt="Leads Activity" width="3234" height="940" data-path="user-guides/chatbot/images/activity/leads-activity.png" />
 </Frame>
 
-The leads form  can be configured through the settings page of the AI agent or through [the Collect Leads action](./actions/collect-leads)
+The leads form  can be configured through the settings page of the AI agent or through [the Collect Leads action](../04-api-reference/leads-and-contacts/collect-leads.md)
