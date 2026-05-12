@@ -2,7 +2,7 @@
 
 ## Scope
 
-This review covers the documents originally staged in `docs/99-needs-review/`. The five high-priority files have now been moved to their recommended final categories without content rewrites. Remaining recommendations below are intended for a later documentation cleanup pass.
+This review covers the documents originally staged in `docs/99-needs-review/`. All originally reviewed content files have now been moved to their recommended final categories without content rewrites. Only the needs-review management files remain in this folder.
 
 ## Executive summary
 
@@ -13,17 +13,17 @@ This review covers the documents originally staged in `docs/99-needs-review/`. T
 | `states.md` | Moved | `docs/01-frontend-integration/custom-frontend/states.md` | No | High |
 | `settings.md` | Moved | `docs/05-analytics-and-operations/settings.md` | Optional later | High |
 | `client-side-custom-forms.md` | Moved | `docs/01-frontend-integration/custom-frontend/client-side-custom-forms.md` | Optional later | High |
-| `overview.md` | Still in needs-review | `docs/03-actions-and-automation/actions-overview.md` | Yes | Medium |
-| `vercel.md` | Still in needs-review | `docs/03-actions-and-automation/integrations/vercel.md` | Optional later | Medium |
-| `whatsapp.md` | Still in needs-review | `docs/06-channels/whatsapp.md` | Optional later | Medium |
-| `whatsapp-templates.md` | Still in needs-review | `docs/06-channels/whatsapp-templates.md` | No | Medium |
+| `overview.md` | Moved | `docs/03-actions-and-automation/actions-overview.md` | Yes | Medium |
+| `vercel.md` | Moved | `docs/03-actions-and-automation/integrations/vercel.md` | Optional later | Medium |
+| `whatsapp.md` | Moved | `docs/06-channels/whatsapp.md` | Optional later | Medium |
+| `whatsapp-templates.md` | Moved | `docs/06-channels/whatsapp-templates.md` | No | Medium |
 | `README.md` | Still in needs-review as index | `docs/99-needs-review/README.md` | No | Low |
 
 ## Move status update
 
-### Moved high-priority files
+### Moved reviewed files
 
-The following files have been moved and should no longer be treated as active `99-needs-review` documents:
+The following reviewed content files have been moved and should no longer be treated as active `99-needs-review` documents:
 
 | Original path | New path | Content changes |
 | --- | --- | --- |
@@ -32,17 +32,19 @@ The following files have been moved and should no longer be treated as active `9
 | `docs/99-needs-review/states.md` | `docs/01-frontend-integration/custom-frontend/states.md` | None |
 | `docs/99-needs-review/settings.md` | `docs/05-analytics-and-operations/settings.md` | None |
 | `docs/99-needs-review/client-side-custom-forms.md` | `docs/01-frontend-integration/custom-frontend/client-side-custom-forms.md` | None |
+| `docs/99-needs-review/overview.md` | `docs/03-actions-and-automation/actions-overview.md` | None |
+| `docs/99-needs-review/vercel.md` | `docs/03-actions-and-automation/integrations/vercel.md` | None |
+| `docs/99-needs-review/whatsapp.md` | `docs/06-channels/whatsapp.md` | None |
+| `docs/99-needs-review/whatsapp-templates.md` | `docs/06-channels/whatsapp-templates.md` | None |
 
-### Remaining review targets
+### Remaining files in `docs/99-needs-review/`
 
-The following files remain in `docs/99-needs-review/` for a later cleanup pass:
+Only management files remain in `docs/99-needs-review/`:
 
-- `overview.md`
-- `vercel.md`
-- `whatsapp.md`
-- `whatsapp-templates.md`
 - `README.md`
 - `REVIEW_PLAN.md`
+
+No reviewed content files remain in this folder.
 
 ### Link TODOs introduced or exposed by the move
 
@@ -56,6 +58,10 @@ Per the cleanup instruction, the following relative links were not changed in th
 | `docs/99-needs-review/README.md` | `streaming.md` | `../04-api-reference/conversations/streaming.md` | README maintenance deferred. |
 | `docs/99-needs-review/README.md` | `states.md` | `../01-frontend-integration/custom-frontend/states.md` | README maintenance deferred. |
 | `docs/99-needs-review/README.md` | `settings.md` | `../05-analytics-and-operations/settings.md` | README maintenance deferred. |
+| `docs/99-needs-review/README.md` | `overview.md` | `../03-actions-and-automation/actions-overview.md` | README maintenance deferred. |
+| `docs/99-needs-review/README.md` | `vercel.md` | `../03-actions-and-automation/integrations/vercel.md` | README maintenance deferred. |
+| `docs/99-needs-review/README.md` | `whatsapp.md` | `../06-channels/whatsapp.md` | README maintenance deferred. |
+| `docs/99-needs-review/README.md` | `whatsapp-templates.md` | `../06-channels/whatsapp-templates.md` | README maintenance deferred. |
 
 ## Review criteria
 
@@ -193,14 +199,10 @@ For each file, this plan evaluates:
 ## Recommended next steps
 
 1. Fix the deferred README relative links listed in the Link TODOs section.
-2. Move the remaining channel/integration/action overview files in a later cleanup pass:
-   - `overview.md` -> `docs/03-actions-and-automation/actions-overview.md`
-   - `vercel.md` -> `docs/03-actions-and-automation/integrations/vercel.md`
-   - `whatsapp.md` -> `docs/06-channels/whatsapp.md`
-   - `whatsapp-templates.md` -> `docs/06-channels/whatsapp-templates.md`
-3. Update relevant section README files and cross-links after the remaining moves.
-4. Defer all splitting until after final locations are stable.
-5. Do not create frontend code or Google AI Studio prompts during the review/move cleanup passes.
+2. Update section README files so they point at the moved documents in their final categories.
+3. Decide whether `docs/99-needs-review/README.md` should be reduced to a short historical note now that no reviewed content files remain in the folder.
+4. Defer all splitting until after final locations and README links are stable.
+5. Do not create frontend code or Google AI Studio prompts during the review/link-maintenance cleanup passes.
 
 ## Notes for future Google AI Studio prompt generation
 
