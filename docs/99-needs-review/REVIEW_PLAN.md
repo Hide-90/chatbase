@@ -2,22 +2,60 @@
 
 ## Scope
 
-This review covers the documents currently in `docs/99-needs-review/`. No files are moved, split, or edited by this review plan. Recommendations below are intended for a later documentation cleanup pass.
+This review covers the documents originally staged in `docs/99-needs-review/`. The five high-priority files have now been moved to their recommended final categories without content rewrites. Remaining recommendations below are intended for a later documentation cleanup pass.
 
 ## Executive summary
 
-| File | Recommended action | Recommended final location | Split later? | Priority |
+| File | Current status | Recommended final location | Split later? | Priority |
 | --- | --- | --- | --- | --- |
-| `developer-overview.md` | Move to a normal category after adding cross-links | `docs/00-overview/developer-overview.md` | No, but cross-link heavily | High |
-| `streaming.md` | Move to API reference, with frontend cross-link | `docs/04-api-reference/conversations/streaming.md` | Optional later | High |
-| `states.md` | Move to custom frontend docs | `docs/01-frontend-integration/custom-frontend/states.md` | No | High |
-| `settings.md` | Move to operations docs | `docs/05-analytics-and-operations/settings.md` | Optional later | High |
-| `client-side-custom-forms.md` | Move to custom frontend docs | `docs/01-frontend-integration/custom-frontend/client-side-custom-forms.md` | Optional later | High |
-| `overview.md` | Move to actions overview | `docs/03-actions-and-automation/actions-overview.md` | Yes | Medium |
-| `vercel.md` | Move to integrations docs | `docs/03-actions-and-automation/integrations/vercel.md` | Optional later | Medium |
-| `whatsapp.md` | Move to channels docs | `docs/06-channels/whatsapp.md` | Optional later | Medium |
-| `whatsapp-templates.md` | Move to channels docs | `docs/06-channels/whatsapp-templates.md` | No | Medium |
-| `README.md` | Keep as the needs-review index until the above files move | `docs/99-needs-review/README.md` | No | Low |
+| `developer-overview.md` | Moved | `docs/00-overview/developer-overview.md` | No, but cross-link heavily | High |
+| `streaming.md` | Moved | `docs/04-api-reference/conversations/streaming.md` | Optional later | High |
+| `states.md` | Moved | `docs/01-frontend-integration/custom-frontend/states.md` | No | High |
+| `settings.md` | Moved | `docs/05-analytics-and-operations/settings.md` | Optional later | High |
+| `client-side-custom-forms.md` | Moved | `docs/01-frontend-integration/custom-frontend/client-side-custom-forms.md` | Optional later | High |
+| `overview.md` | Still in needs-review | `docs/03-actions-and-automation/actions-overview.md` | Yes | Medium |
+| `vercel.md` | Still in needs-review | `docs/03-actions-and-automation/integrations/vercel.md` | Optional later | Medium |
+| `whatsapp.md` | Still in needs-review | `docs/06-channels/whatsapp.md` | Optional later | Medium |
+| `whatsapp-templates.md` | Still in needs-review | `docs/06-channels/whatsapp-templates.md` | No | Medium |
+| `README.md` | Still in needs-review as index | `docs/99-needs-review/README.md` | No | Low |
+
+## Move status update
+
+### Moved high-priority files
+
+The following files have been moved and should no longer be treated as active `99-needs-review` documents:
+
+| Original path | New path | Content changes |
+| --- | --- | --- |
+| `docs/99-needs-review/developer-overview.md` | `docs/00-overview/developer-overview.md` | None |
+| `docs/99-needs-review/streaming.md` | `docs/04-api-reference/conversations/streaming.md` | None |
+| `docs/99-needs-review/states.md` | `docs/01-frontend-integration/custom-frontend/states.md` | None |
+| `docs/99-needs-review/settings.md` | `docs/05-analytics-and-operations/settings.md` | None |
+| `docs/99-needs-review/client-side-custom-forms.md` | `docs/01-frontend-integration/custom-frontend/client-side-custom-forms.md` | None |
+
+### Remaining review targets
+
+The following files remain in `docs/99-needs-review/` for a later cleanup pass:
+
+- `overview.md`
+- `vercel.md`
+- `whatsapp.md`
+- `whatsapp-templates.md`
+- `README.md`
+- `REVIEW_PLAN.md`
+
+### Link TODOs introduced or exposed by the move
+
+Per the cleanup instruction, the following relative links were not changed in this pass and should be fixed in a follow-up README/link-maintenance pass:
+
+| File containing link | Current link | Suggested target | Reason not changed now |
+| --- | --- | --- | --- |
+| `docs/05-analytics-and-operations/README.md` | `../99-needs-review/settings.md` | `settings.md` | This pass only moved the five high-priority files and updates this review plan. |
+| `docs/99-needs-review/README.md` | `developer-overview.md` | `../00-overview/developer-overview.md` | README maintenance deferred. |
+| `docs/99-needs-review/README.md` | `client-side-custom-forms.md` | `../01-frontend-integration/custom-frontend/client-side-custom-forms.md` | README maintenance deferred. |
+| `docs/99-needs-review/README.md` | `streaming.md` | `../04-api-reference/conversations/streaming.md` | README maintenance deferred. |
+| `docs/99-needs-review/README.md` | `states.md` | `../01-frontend-integration/custom-frontend/states.md` | README maintenance deferred. |
+| `docs/99-needs-review/README.md` | `settings.md` | `../05-analytics-and-operations/settings.md` | README maintenance deferred. |
 
 ## Review criteria
 
@@ -152,20 +190,15 @@ For each file, this plan evaluates:
 | Google AI Studio prompt relevance | Low. It can help tooling discover what is pending, but should not be used as prompt content. |
 | Later cleanup notes | Update the file whenever documents move out of `99-needs-review/`. |
 
-## Recommended next steps, without moving files yet
+## Recommended next steps
 
-1. Move the five high-priority files first:
-   - `developer-overview.md` -> `docs/00-overview/developer-overview.md`
-   - `streaming.md` -> `docs/04-api-reference/conversations/streaming.md`
-   - `states.md` -> `docs/01-frontend-integration/custom-frontend/states.md`
-   - `settings.md` -> `docs/05-analytics-and-operations/settings.md`
-   - `client-side-custom-forms.md` -> `docs/01-frontend-integration/custom-frontend/client-side-custom-forms.md`
-2. Move the remaining channel/integration/action overview files:
+1. Fix the deferred README relative links listed in the Link TODOs section.
+2. Move the remaining channel/integration/action overview files in a later cleanup pass:
    - `overview.md` -> `docs/03-actions-and-automation/actions-overview.md`
    - `vercel.md` -> `docs/03-actions-and-automation/integrations/vercel.md`
    - `whatsapp.md` -> `docs/06-channels/whatsapp.md`
    - `whatsapp-templates.md` -> `docs/06-channels/whatsapp-templates.md`
-3. Update relevant section README files and cross-links after moves.
+3. Update relevant section README files and cross-links after the remaining moves.
 4. Defer all splitting until after final locations are stable.
 5. Do not create frontend code or Google AI Studio prompts during the review/move cleanup passes.
 
