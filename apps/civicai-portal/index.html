@@ -4,9 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CivicAI Portal Prototype</title>
+    <!-- civicai-inline-styles -->
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="portal-title">
+        <div>
+          <p class="eyebrow">Mock mode · No production Chatbase connection</p>
+          <h1 id="portal-title">CivicAI Portal</h1>
+          <p>
+            A safe prototype for reviewing a municipal tourism chat UI, visitor quick actions, structured request metadata,
+            and future Chatbase-related backend/API integration points.
+          </p>
+        </div>
+        <div class="status-card">
+          <span class="status-dot" aria-hidden="true"></span>
+          Placeholder API layer active
+        </div>
+      </section>
+
+      <section class="quick-actions" aria-label="Quick actions" id="quick-actions"></section>
+
+      <div class="portal-grid">
+        <section class="panel chat-panel" aria-labelledby="chat-heading">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Conversation</p>
+              <h2 id="chat-heading">Ask a visitor question</h2>
+            </div>
+            <button class="ghost-button" type="button" id="simulate-error">Simulate error</button>
+          </div>
+
+          <div class="conversation" aria-live="polite" id="conversation"></div>
+
+          <form class="chat-input" id="chat-form">
+            <label for="message-input">Message</label>
+            <div>
+              <input id="message-input" type="text" placeholder="Ask about highlights, transit, food, events, or visitor routes…" />
+              <button type="submit" id="send-button">Send</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="side-column">
+          <section class="panel" aria-labelledby="form-heading">
+            <p class="eyebrow">Visitor context</p>
+            <h2 id="form-heading">Request metadata preview</h2>
+            <form class="request-form" id="request-form">
+              <label>
+                Visitor name
+                <input name="name" placeholder="Alex Visitor" />
+              </label>
+              <label>
+                Email
+                <input name="email" placeholder="alex@example.test" />
+              </label>
+              <label>
+                Area or hotel district
+                <input name="area" placeholder="Central district" />
+              </label>
+              <label>
+                Request type
+                <select name="requestType">
+                  <option>Trip planning question</option>
+                  <option>Cultural route</option>
+                  <option>Transport question</option>
+                  <option>Food recommendation</option>
+                  <option>Event question</option>
+                </select>
+              </label>
+              <label>
+                Details
+                <textarea name="details" placeholder="Describe the visitor need…"></textarea>
+              </label>
+              <button type="submit">Preview metadata</button>
+            </form>
+          </section>
+
+          <section class="panel" aria-labelledby="metadata-heading">
+            <p class="eyebrow">Future integration boundary</p>
+            <h2 id="metadata-heading">Action/API placeholder</h2>
+            <p class="action-result" id="action-result">No action/API placeholder has been triggered yet.</p>
+            <pre id="metadata-preview"></pre>
+            <!-- Future Chatbase-related backend/API integration point:
+                 replace the mock response in src/portal-runtime.mjs with a server-side API call.
+                 Keep production keys and secrets on the server, never in this browser bundle. -->
+          </section>
+        </aside>
+      </div>
+    </main>
+    <!-- civicai-inline-script -->
   </body>
 </html>

@@ -8,6 +8,16 @@ CivicAI Portal is a safe municipal tourism demo prototype for reviewing a custom
 - Validate the first custom frontend flow for a Chatbase-agent-centered municipal tourism assistant.
 - Review UI behavior, mock state handling, structured visitor metadata, and future integration boundaries before any production API connection.
 
+## Implementation notes
+
+This prototype is intentionally dependency-free so it can run in restricted review environments without downloading frontend packages.
+
+- `index.html` owns the static page structure.
+- `src/styles/global.css` owns presentation.
+- `src/portal-runtime.mjs` owns the mock chat state, quick actions, visitor metadata mapping, and placeholder assistant behavior.
+- `scripts/build.mjs` embeds the CSS and runtime into `dist/index.html` for static review.
+- `scripts/dev-server.mjs` builds and serves only the generated `dist` output.
+
 ## Local setup
 
 ```bash
@@ -23,6 +33,8 @@ Then open the local URL printed by the development server.
 npm run build
 ```
 
+The build produces `dist/index.html`.
+
 ## Current integration status
 
 This prototype is **not connected to the production Chatbase API**.
@@ -34,7 +46,7 @@ This prototype is **not connected to the production Chatbase API**.
 
 ## Future Chatbase API connection point
 
-Future Chatbase-related backend/API integration should be added behind the isolated message submission boundary in `src/App.tsx`:
+Future Chatbase-related backend/API integration should be added behind the isolated message submission boundary in `src/portal-runtime.mjs`:
 
 - Replace `createMockAssistantResponse` with a call to a server-side backend/API layer.
 - Replace the `window.setTimeout` mock in `submitMessage` with a real request flow.
