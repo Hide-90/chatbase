@@ -5,6 +5,7 @@ Reserved area for future frontend use-case documentation. No frontend code or Go
 Prototype planning:
 
 - [Google AI Studio Prototype Guide](google-ai-studio-prototype-guide.md)
+- [Prototype Requirements](prototype-requirements.md)
 
 Planned use-case areas:
 
