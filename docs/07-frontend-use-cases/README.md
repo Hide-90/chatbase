@@ -7,6 +7,7 @@ Prototype planning:
 - [Google AI Studio Prototype Guide](google-ai-studio-prototype-guide.md)
 - [Prototype Requirements](prototype-requirements.md)
 - [Google AI Studio First Prompt](google-ai-studio-first-prompt.md)
+- [Google AI Studio Output Review Checklist](google-ai-studio-output-review-checklist.md)
 
 Planned use-case areas:
 
