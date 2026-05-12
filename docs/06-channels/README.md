@@ -1,6 +1,6 @@
 # Channels
 
-Messaging, social, phone, Slack, and human-handoff channel documentation.
+Messaging, social, phone, WhatsApp, Slack, and human-handoff channel documentation.
 
 ## Documents
 
@@ -9,5 +9,9 @@ Messaging, social, phone, Slack, and human-handoff channel documentation.
 - [`messenger.md`](messenger.md)
 - [`slack.md`](slack.md)
 - [`twilio-phone.md`](twilio-phone.md)
+- [`whatsapp.md`](whatsapp.md)
+- [`whatsapp-templates.md`](whatsapp-templates.md)
 
-WhatsApp documents are temporarily in [`../99-needs-review/`](../99-needs-review/) because they combine channel setup, templates, lead collection, and multilingual use-case concerns.
+Related use-case area:
+
+- Future frontend use cases: [`../07-frontend-use-cases/`](../07-frontend-use-cases/)

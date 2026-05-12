@@ -48,20 +48,7 @@ No reviewed content files remain in this folder.
 
 ### Link TODOs introduced or exposed by the move
 
-Per the cleanup instruction, the following relative links were not changed in this pass and should be fixed in a follow-up README/link-maintenance pass:
-
-| File containing link | Current link | Suggested target | Reason not changed now |
-| --- | --- | --- | --- |
-| `docs/05-analytics-and-operations/README.md` | `../99-needs-review/settings.md` | `settings.md` | This pass only moved the five high-priority files and updates this review plan. |
-| `docs/99-needs-review/README.md` | `developer-overview.md` | `../00-overview/developer-overview.md` | README maintenance deferred. |
-| `docs/99-needs-review/README.md` | `client-side-custom-forms.md` | `../01-frontend-integration/custom-frontend/client-side-custom-forms.md` | README maintenance deferred. |
-| `docs/99-needs-review/README.md` | `streaming.md` | `../04-api-reference/conversations/streaming.md` | README maintenance deferred. |
-| `docs/99-needs-review/README.md` | `states.md` | `../01-frontend-integration/custom-frontend/states.md` | README maintenance deferred. |
-| `docs/99-needs-review/README.md` | `settings.md` | `../05-analytics-and-operations/settings.md` | README maintenance deferred. |
-| `docs/99-needs-review/README.md` | `overview.md` | `../03-actions-and-automation/actions-overview.md` | README maintenance deferred. |
-| `docs/99-needs-review/README.md` | `vercel.md` | `../03-actions-and-automation/integrations/vercel.md` | README maintenance deferred. |
-| `docs/99-needs-review/README.md` | `whatsapp.md` | `../06-channels/whatsapp.md` | README maintenance deferred. |
-| `docs/99-needs-review/README.md` | `whatsapp-templates.md` | `../06-channels/whatsapp-templates.md` | README maintenance deferred. |
+All previously deferred README relative links have been resolved in the README/link-maintenance pass. No known repository-local relative Markdown links are intentionally left broken.
 
 ## Review criteria
 
@@ -198,11 +185,10 @@ For each file, this plan evaluates:
 
 ## Recommended next steps
 
-1. Fix the deferred README relative links listed in the Link TODOs section.
-2. Update section README files so they point at the moved documents in their final categories.
-3. Decide whether `docs/99-needs-review/README.md` should be reduced to a short historical note now that no reviewed content files remain in the folder.
-4. Defer all splitting until after final locations and README links are stable.
-5. Do not create frontend code or Google AI Studio prompts during the review/link-maintenance cleanup passes.
+1. Keep `docs/99-needs-review/` as a management and history folder only.
+2. Add any new Chatbase body documentation to the appropriate topic directory under `docs/`, not to `99-needs-review/`.
+3. Defer any content splitting until a dedicated content-editing pass.
+4. Continue to avoid frontend code and Google AI Studio prompt generation during documentation maintenance passes.
 
 ## Notes for future Google AI Studio prompt generation
 

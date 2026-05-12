@@ -1,17 +1,24 @@
-# Needs Review
+# Needs Review History
 
-These documents contain mixed or uncertain topics and were intentionally not split during the documentation-only reorganization.
+This folder is now a management and history area for the documentation reorganization. All reviewed content documents have been moved to their recommended final categories.
 
-## Files
+## Current files
 
-- [`overview.md`](overview.md) - Appears to describe AI actions more than a general Chatbase overview.
-- [`developer-overview.md`](developer-overview.md) - Spans embed, REST API, and integration patterns.
-- [`client-side-custom-forms.md`](client-side-custom-forms.md) - Combines frontend form UI, validation, and action execution.
-- [`streaming.md`](streaming.md) - Combines API transport details and frontend rendering behavior.
-- [`states.md`](states.md) - Applies to both conditional frontend UI and function/action rules.
-- [`vercel.md`](vercel.md) - Combines deployment, marketplace, and integration material.
-- [`settings.md`](settings.md) - Combines workspace, member, and operational settings.
-- [`whatsapp.md`](whatsapp.md) - Combines channel setup, lead collection, and multilingual use-case concerns.
-- [`whatsapp-templates.md`](whatsapp-templates.md) - Combines channel templates and messaging operations.
+- [`REVIEW_PLAN.md`](REVIEW_PLAN.md) - Historical review notes, final move status, and follow-up cleanup guidance.
+- [`README.md`](README.md) - This management note.
 
-Review these before assigning final canonical locations or splitting content.
+## Moved content documents
+
+| Former needs-review file | Current location |
+| --- | --- |
+| `developer-overview.md` | [`../00-overview/developer-overview.md`](../00-overview/developer-overview.md) |
+| `client-side-custom-forms.md` | [`../01-frontend-integration/custom-frontend/client-side-custom-forms.md`](../01-frontend-integration/custom-frontend/client-side-custom-forms.md) |
+| `states.md` | [`../01-frontend-integration/custom-frontend/states.md`](../01-frontend-integration/custom-frontend/states.md) |
+| `streaming.md` | [`../04-api-reference/conversations/streaming.md`](../04-api-reference/conversations/streaming.md) |
+| `settings.md` | [`../05-analytics-and-operations/settings.md`](../05-analytics-and-operations/settings.md) |
+| `overview.md` | [`../03-actions-and-automation/actions-overview.md`](../03-actions-and-automation/actions-overview.md) |
+| `vercel.md` | [`../03-actions-and-automation/integrations/vercel.md`](../03-actions-and-automation/integrations/vercel.md) |
+| `whatsapp.md` | [`../06-channels/whatsapp.md`](../06-channels/whatsapp.md) |
+| `whatsapp-templates.md` | [`../06-channels/whatsapp-templates.md`](../06-channels/whatsapp-templates.md) |
+
+Do not add new body documentation here. Put new Chatbase documentation in the appropriate topic directory under `docs/`.
