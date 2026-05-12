@@ -2,6 +2,10 @@
 
 Reserved area for future frontend use-case documentation. No frontend code or Google AI Studio prompts are included in this reorganization.
 
+Prototype planning:
+
+- [Google AI Studio Prototype Guide](google-ai-studio-prototype-guide.md)
+
 Planned use-case areas:
 
 - Tourism chatbot
